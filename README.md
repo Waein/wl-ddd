@@ -14,8 +14,8 @@
                    │   Controller     │  │ Repository Impl        │
                    └────────┬─────────┘  │ Data Converter         │
                             │            │ DO / Mapper            │
-                            │            └─────────┬──────────────┘
-                   ┌────────▼─────────┐            │
+                            │            └──────────┬─────────────┘
+                   ┌────────▼──────────┐            │
                    │ wl-ddd-application│◄───────────┘  依赖注入
                    │ App Service / DTO │
                    │ DTO Assembler     │
@@ -152,3 +152,10 @@ curl -X POST http://localhost:8080/api/v1/orders/1/cancel
 ```
 
 始终遵循：**Domain 层不依赖 Infrastructure，通过接口+依赖注入解耦。**
+
+## 参考文章
+
+- [殷浩详解DDD 第一讲 - Domain Primitive](https://github.com/Waein/wl-ddd)
+- [殷浩详解DDD 第二讲 - 应用架构](https://github.com/Waein/wl-ddd)
+- [殷浩详解DDD 第三讲 - Repository模式](https://github.com/Waein/wl-ddd)
+- [阿里技术专家详解DDD 第四讲 - 领域层设计规范](https://github.com/Waein/wl-ddd)
