@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.waein</groupId>
+        <artifactId>wl-ddd</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>wl-ddd-domain</artifactId>
+    <name>wl-ddd-domain</name>
+    <description>Domain Layer - Entity, Aggregate Root, Repository接口, Domain Service，纯POJO仅依赖Types</description>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.waein</groupId>
+            <artifactId>wl-ddd-types</artifactId>
+        </dependency>
+    </dependencies>
+
+</project>
